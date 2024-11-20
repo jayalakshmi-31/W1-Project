@@ -7,7 +7,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <title>Team project</title>
 </head>
-<body>
+<body class="bg-[#1F2027] text-white p-4 flex flex-col min-h-screen">
   <header>
     <nav>
       <div>Logo</div>
@@ -24,14 +24,37 @@
       <button>Search</button>
     </div>
   </header>
-  <main>
+  <main class="flex-grow">
     <section>Recipes</section>
-    <section>Add your recipe</section>
+    <section class="flex justify-center items-center gap-14 m-20">
+      <img class="p-4 w-[600px]" src="./img/add-recipe.png" alt="recipe_img">
+      <div class="p-4 w-[600px] text-center">
+        <h2 class="text-3xl m-6 text-[#FBB72C]">Share Your Recipes</h2>
+        <p class="text-xl m-6">Have a favorite recipe you'd love to share with 
+          the world? Join our community of food lovers and inspire others with 
+          your culinary creations!
+        </p>
+        <button class="bg-[#1F2027] border border-[#FBB72C] text-white py-3 px-6 rounded-lg hover:bg-[#FBB72C] hover:text-black">Create new recipe</button>
+      </div>
+    </section>
   </main>
-  <footer>
-    © 2024 KITCHENCARE. All Rights Reserved. A Raptive Partner Site.
-    <p>Privacy Policy</p>
-    <p>Terms</p>
+  <footer class="bg-[#1F2027] text-white py-8 border-t border-gray-700">
+    <div class="container mx-auto text-center">
+      <p class="text-sm mb-4">© 2024 KITCHENCARE. All Rights Reserved. A Raptive Partner Site.</p>
+      <div class="flex justify-center gap-6 mb-4">
+        <a href="#" class="text-[#FBB72C] hover:underline">Privacy Policy</a>
+        <a href="#" class=" text-[#FBB72C] hover:underline">Terms</a>
+        <a href="mailto:k@kitchen.com" class="text-[#FBB72C] hover:underline">Contact Us</a>
+      </div>
+      <div class="flex justify-center gap-6 mb-4">
+        <a href="#" class="text-[#FBB72C] hover:text-white"> Facebook</a>
+        <a href="#" class="text-[#FBB72C] hover:text-white">Twitter</a>
+        <a href="#" class="text-[#FBB72C] hover:text-white">Instagram</a>
+      </div> 
+      <div class="mt-4">
+        <a href="#top" class="text-sm text-[#FBB72C] hover:underline">Back to Top</a>
+      </div>
+    </div>
   </footer>
 </body>
 </html>
