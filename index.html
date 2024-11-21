@@ -4,24 +4,77 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <title>Team project</title>
 </head>
-<body class="bg-[#1F2027] text-white p-4 flex flex-col min-h-screen">
-  <header>
-    <nav>
-      <div>Logo</div>
-      <ul>
-        <li>Recipes</li>
-        <li>Discover</li>
-        <li>About us</li>
-      </ul>
-    </nav>
-    <h1>Welcome to KITCHENCARE</h1>
-    <div>
-      <select name="" id=""></select>
-      <input type="search">
-      <button>Search</button>
+<body class="bg-[#1F2027] text-white flex flex-col font-dm-sans text-lg">
+  <header class="text-white relative w-full overflow-hidden">
+    <img
+      src="./img/header-img.png"
+      alt="W1-Project"
+      class="absolute top-0 left-0 -z-10 w-full "
+    />
+    <div
+      class="p-4 flex justify-between items-center bg-[#1F2027] w-screen"
+    >
+      <div class="flex items-center space-x-2">
+        <h1 class="text-lg font-bold text-[#FBB72C] cursor-pointer ">KITCHEN CARE</h1>
+      </div>
+      <nav class="space-x-6">
+        <a href="#" class="text-white hover:text-[#FBB72C]">Recipes</a>
+        <a href="#" class="text-white hover:text-[#FBB72C]">Discover</a>
+        <a href="#" class="text-white hover:text-[#FBB72C]">About us</a>
+      </nav>
+      <div class="space-x-4">
+        <button
+          class="bg-transparent border border-[#FBB72C] text-[#FBB72C] px-4 py-2 rounded hover:bg-yellow-500 hover:text-black"
+        >
+          Login
+        </button>
+        <button
+          class="bg-[#FBB72C] text-black px-4 py-2 rounded hover:bg-yellow-600"
+        >
+          Sign up
+        </button>
+      </div>
+    </div>
+
+    <div class="text-center py-12 text-white m-[150px]">
+      <h1 class="text-4xl font-bold">Welcome to KITCHENCARE</h1>
+      <div class="mt-6 flex justify-center">
+        <div class="bg-white p-2 rounded flex gap-2 font-bold text-base">
+          <div class="relative">
+            <select
+            class="appearance-none text-black text-sm p-4 rounded focus:outline-none border border-[#868482] w-[123px]"
+          >
+            <option>Recipes</option>
+            <option>Articles</option>
+            <option>Tips</option>
+          </select>
+          <span class="absolute top-1/2 right-3 transform -translate-y-1/2 pointer-events-none text-black">
+            ▼
+          </span>
+          </div>
+          <div class="relative">
+            <input
+            type="text"
+            placeholder="Search recipes here"
+            class="pl-10 p-4 text-gray-700 rounded focus:outline-none border border-[#868482] w-[598px]"
+            />
+            <i class="fas fa-search absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500"></i>
+          </div>
+          
+          <button
+            class="right-0 top-0 bg-[#FBB72C] text-black px-4 py-2 rounded hover:bg-yellow-600 border border-[#868482] w-[123px]"
+          >
+            Search
+          </button>
+        </div>
+      </div>
     </div>
   </header>
   <main class="flex-grow">
