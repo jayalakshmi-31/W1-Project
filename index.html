@@ -14,13 +14,13 @@
     <title>Team project</title>
   </head>
   <body class="bg-[#1F2027] text-white flex flex-col font-dm-sans text-lg min-w-[400px]">
-    <header class="text-white relative w-full overflow-hidden">
-      <img src="./img/header-img.png" alt="W1-Project" class="absolute top-0 left-0 -z-10 w-full h-full object-cover" />
+    <header class="text-white relative w-full overflow-hidden min-h-[500px]">
+      <img src="./img/header-img.png" alt="W1-Project" class="absolute top-0 left-0 -z-10 w-full h-full object-cover " />
       <div class="p-4 flex justify-between items-center bg-[#1F2027] w-screen">
         <div class="flex items-center space-x-2">
           <h1 class="text-lg font-bold text-[#FBB72C] cursor-pointer ">KITCHEN CARE</h1>
         </div>
-        <nav class="space-x-6">
+        <nav class="hidden space-x-6 md:block">
           <a href="#" class="text-white hover:text-[#FBB72C]">Recipes</a>
           <a href="#" class="text-white hover:text-[#FBB72C]">Discover</a>
           <a href="#" class="text-white hover:text-[#FBB72C]">About us</a>
@@ -158,7 +158,7 @@
           </div>
         </div>
       </section>
-      <section class="grid-rows lg:grid-cols-2 grid  items-center gap-2 my-20">
+      <section class="grid-rows lg:grid-cols-2 grid items-center gap-4 mb-20 mt-40 md:mt-72 max-w-[1000px] mx-auto">
         <img class="mx-auto p-2 w-full max-w-[400px] object-cover" src="./img/add-recipe.png" alt="recipe_img">
         <div class="p-2 text-center">
           <h2 class="text-xl lg:text-3xl m-6 text-[#FBB72C]">Share Your Recipes</h2>
