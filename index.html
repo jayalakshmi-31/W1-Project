@@ -16,7 +16,7 @@
   <body class="bg-[#1F2027] text-white flex flex-col font-dm-sans text-lg min-w-[400px]">
     <header class="text-white relative w-full overflow-hidden min-h-[500px]">
       <img src="./img/header-img.png" alt="W1-Project" class="absolute top-0 left-0 -z-10 w-full h-full object-cover " />
-      <div class="p-4 flex justify-between items-center bg-[#1F2027] w-screen">
+      <div class="p-4 flex justify-between items-center bg-[#1F2027] w-screen min-w-[400px]">
         <div class="flex items-center space-x-2">
           <h1 class="text-lg font-bold text-[#FBB72C] cursor-pointer ">KITCHEN CARE</h1>
         </div>
@@ -25,7 +25,8 @@
           <a href="#" class="text-white hover:text-[#FBB72C]">Discover</a>
           <a href="#" class="text-white hover:text-[#FBB72C]">About us</a>
         </nav>
-        <div class="space-x-4">
+        <i class="fas fa-search text-[#FBB72C] cursor-pointer md:hidden"></i>
+        <div class="space-x-4 hidden md:block">
           <button
             class="bg-transparent border border-[#FBB72C] text-[#FBB72C] px-4 py-2 rounded hover:bg-yellow-500 hover:text-black">
             Login
@@ -36,10 +37,10 @@
         </div>
       </div>
 
-      <div class=" flex flex-col justify-center w-6/12 min-w-[560px] mx-auto sm:h-96 md:h-[591px]">
-        <h1 class="text-4xl text-[#FBB72C] font-bold">Welcome to KITCHENCARE</h1>
-
-        <div class=" mt-6 bg-white p-2 rounded gap-2 font-bold w-full hidden md:flex">
+      <div class="flex flex-col justify-center w-7/12 min-w-[400px] min-h-[400px] mx-auto sm:h-96 md:h-[591px]">
+        <div class="p-8">
+          <h1 class="text-4xl text-[#FBB72C] font-bold">Welcome to KITCHENCARE</h1>
+        <div class="mt-6 bg-white p-2 rounded gap-2 font-bold w-full hidden md:flex">
           <div class="relative">
             <select
               class="appearance-none text-black text-sm p-4 rounded focus:outline-none border border-[#868482] w-32 h-full">
@@ -62,10 +63,11 @@
             Search
           </button>
         </div>
+        </div>
       </div>
     </header>
     <main class="flex-grow p-16">
-      <h2 class="font-bold text-3x">Recipes</h2>
+      <h2 class="font-bold text-3xl">Recipes</h2>
       <section class="text-base grid md:grid-cols-3 gap-8 md:gap-4 mt-4">
         <div>
           <div>
